@@ -5,13 +5,13 @@ This repository contains a set of scripts to compile the [toxcore library](https
 
 In order to be able to run the scripts, you need to install the Ubuntu SDK first. You can follow the instructions included in the Ubuntu SDK documentation for that: http://developer.ubuntu.com/start/ubuntu-sdk/installing-the-sdk/
 
-Then you need to run the following command to set up a new click chroot for building toxcore or to update an already existing one with the required software.
-```bash
+Then you need to run the following command to set up a new click chroot for building toxcore or to update an already existing one with the required software:
+```
 ./setup-toxcore-chroot.sh
 ```
 
 Afterwards, you can build toxcore using this command:
-```bash
+```
 ./build-toxcore-in-chroot.sh
 ```
 
