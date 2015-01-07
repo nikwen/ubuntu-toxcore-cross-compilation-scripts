@@ -7,14 +7,14 @@ In order to be able to run the scripts, you need to install the Ubuntu SDK first
 
 Then you need to run the following command to set up a new click chroot for building toxcore or to update an already existing one with the required software:
 ```
-./setup-toxcore-chroot.sh \[arch\]
+./setup-toxcore-chroot.sh [arch]
 ```
 
 Replace `[arch]` with the architecture you want to compile for. May be armhf, i386 or amd64.
 
 Afterwards, you can build toxcore using this command:
 ```
-./build-toxcore-in-chroot.sh \[arch\]
+./build-toxcore-in-chroot.sh [arch]
 ```
 
 This script will execute the `build-toxcore.sh` script in the chroot we created.
