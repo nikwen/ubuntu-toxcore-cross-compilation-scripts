@@ -13,5 +13,4 @@ fi
 
 SCRIPT_DIR=$(dirname $(readlink -f "$0"))
 
-# Command needs to be run as root (=> maint) because chroot does not support sudo
-click chroot -a $ARCH -f ubuntu-sdk-14.10 -s utopic maint $SCRIPT_DIR/build-toxcore.sh $ARCH
+click chroot -a $ARCH -f ubuntu-sdk-14.10 -s utopic run $SCRIPT_DIR/build-toxcore.sh $ARCH

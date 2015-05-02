@@ -10,7 +10,7 @@ Then you need to run the following command to set up a new click chroot for buil
 ./setup-toxcore-chroot.sh [arch]
 ```
 
-Replace `[arch]` with the architecture you want to compile for. May be armhf, i386 or amd64.
+Replace `[arch]` with the architecture you want to compile for (may be armhf, i386 or amd64).
 
 Afterwards, you can build toxcore using this command:
 ```

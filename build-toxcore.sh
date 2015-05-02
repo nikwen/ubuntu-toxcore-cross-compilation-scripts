@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# Needs to be run as root!
-
-# This follows the official compiling instructions: https://github.com/irungentoo/toxcore/blob/master/INSTALL.md#most-unix-like-oses
-
-# In order to be run in a click chroot using the click chroot maint command, all sudo calls were removed from this script.
+# This follows the official compilation instructions: https://github.com/irungentoo/toxcore/blob/master/INSTALL.md#most-unix-like-oses
 
 if [ $# == 0 ] || [ "$1" == "armhf" ]; then
 	ARCH="armhf"
@@ -44,7 +40,6 @@ git checkout tags/1.0.0
 ./configure $ARGS --prefix=$LIBSODIUM_INSTALL_DIR
 make
 make install
-ldconfig
 cd ..
 
 git clone git://github.com/irungentoo/toxcore.git
