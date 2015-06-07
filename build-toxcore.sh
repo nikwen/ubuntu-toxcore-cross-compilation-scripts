@@ -38,7 +38,7 @@ cd $LIBSODIUM_DIR
 git checkout tags/1.0.0
 ./autogen.sh
 ./configure $ARGS --prefix=$LIBSODIUM_INSTALL_DIR
-make
+make -j4
 make install
 cd ..
 
@@ -46,5 +46,5 @@ git clone git://github.com/irungentoo/toxcore.git
 cd $TOXCORE_DIR
 autoreconf -i
 ./configure $ARGS --with-libsodium-headers=$LIBSODIUM_INSTALL_DIR/include --with-libsodium-libs=$LIBSODIUM_INSTALL_DIR/lib --disable-tests --prefix=$TOXCORE_INSTALL_DIR
-make
+make -j4
 make install
